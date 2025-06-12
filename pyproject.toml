@@ -1,0 +1,40 @@
+[project]
+name = "clusterkv"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch==2.5.0",
+    "transformers==4.45.2",
+    "datasets==3.0.1",
+    "flashinfer-python==0.2.5",
+    "pylibraft-cu11==24.10.0",
+    "tiktoken==0.8.0",
+    "accelerate==1.0.1",
+    "pip>=25.1.1",
+    "setuptools>=80.8.0",
+]
+
+[build-system]
+requires = ["setuptools", "wheel", "packaging"]
+build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+build = ["torch", "setuptools", "packaging"]
+compile = ["flash-attn==2.6.3"]
+
+[tool.uv]
+no-build-isolation-package = ["flash-attn"]
+
+[[tool.uv.dependency-metadata]]
+name = "flash-attn"
+version = "2.6.3"
+requires-dist = ["torch", "einops"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[[tool.uv.index]]
+url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
+default = true

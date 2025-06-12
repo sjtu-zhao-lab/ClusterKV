@@ -1,0 +1,10 @@
+{
+    "llama3-8b-chat-4k": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "llama3-8b-chat-8k": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "llama3.1-8b-chat-4k": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "llama3.1-8b-chat-8k": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "llama3.1-8b-chat-32k": "meta-llama/Llama-3.1-8B-Instruct",
+    "glm4-9b-chat-4k": "/data/huggingface/hub/models--ZhipuAI--glm-4-9b-chat/",
+    "glm4-9b-chat-8k": "/data/huggingface/hub/models--ZhipuAI--glm-4-9b-chat/",
+    "glm4-9b-chat-32k": "/data/huggingface/hub/models--ZhipuAI--glm-4-9b-chat/"
+}
