@@ -6,8 +6,8 @@ from transformers.cache_utils import DynamicCache
 from transformers.models.llama.modeling_llama import LlamaAttention
 from datasets import load_dataset
 from torch.nn import CrossEntropyLoss
-from evaluation.patch import parse_common_args, enable_attention_eval, get_config_output_affix
-from evaluation.cluster_attention import cluster_reset
+from accuracy.patch import parse_common_args, enable_attention_eval, get_config_output_affix
+from accuracy.cluster_attention import cluster_reset
 import argparse
 
 device = "cuda"

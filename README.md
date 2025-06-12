@@ -40,12 +40,12 @@ pushd 3rdparty/raft/
 INSTALL_PREFIX=$VIRTUAL_ENV ./build.sh libraft
 popd && pushd kernel
 bash setup.sh
+popd
 ```
 
 4. Install the package
 
 ```bash
-cd clusterkv
 pip install -e .
 ```
 

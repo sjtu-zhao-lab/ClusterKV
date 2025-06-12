@@ -57,7 +57,7 @@ def load_model(model_cfg: ModelConfig, method: str):
 def benchmark_quest():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", choices=MODEL_CFGS.keys(), default="llama3-8b")
-    parser.add_argument("--context_len", type=int, default=2*1024, help="Prefill length")
+    parser.add_argument("--context_len", type=int, default=4*1024, help="Prefill length")
     parser.add_argument("--decode_len", type=int, default=256, help="Generation length")
     parser.add_argument("--page_size", type=int, default=16, help="Page size for Quest")
     parser.add_argument("--token_budget", type=int, default=512, help="Token budget for ClusterKV and Quest")
