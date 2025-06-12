@@ -106,8 +106,8 @@ If you find ClusterKV useful in your research, please consider citing our work.
 ## Acknowledgements
 
 This project uses the following open-source libraries:
-- [flashinfer](https://github.com/flashinfer/flashinfer)
-- [Quest](https://github.com/quest/quest)
+- [flashinfer](https://github.com/flashinfer-ai/flashinfer)
+- [Quest](https://github.com/mit-han-lab/Quest)
 - [raft](https://github.com/rapidsai/raft)
 
 We are grateful to their great works!
